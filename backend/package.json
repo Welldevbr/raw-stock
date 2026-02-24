@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "REST API for inventory and production simulation system",
   "main": "dist/server.js",
-  "author": "Your Name",
+  "author": "Wellington Santana",
   "license": "MIT",
   "type": "commonjs",
   "engines": {
