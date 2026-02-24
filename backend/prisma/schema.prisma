@@ -13,3 +13,10 @@ model Product {
   price Float
   createdAt     DateTime @default(now())
 }
+
+model RawMaterial {
+  id               Int                     @id @default(autoincrement())
+  code             String                  @unique
+  name             String
+  stockQuantity    Int
+}

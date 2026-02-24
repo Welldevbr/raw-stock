@@ -5,17 +5,9 @@ import { productController } from "./product.controller";
 
 const router = Router();
 
-router.post(
-  "/products",
-  validate(createProductSchema),
-  productController.create,
-);
-router.get("/products", productController.getAll);
-router.put(
-  "/products/:id",
-  validate(updateProductSchema),
-  productController.update,
-);
-router.delete("/products/:id", productController.delete);
+router.post("/", validate(createProductSchema), productController.create);
+router.get("/", productController.getAll);
+router.put("/:id", validate(updateProductSchema), productController.update);
+router.delete("/:id", productController.delete);
 
-export { router };
+export const productRoutes = router;
