@@ -1,7 +1,7 @@
 import z from "zod";
 
 export const createRawMaterialSchema = z.object({
-  code: z.number().min(1),
+  code: z.string().min(1),
   name: z.string().min(1),
   stockQuantity: z.number().int().nonnegative(),
 });
